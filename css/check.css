@@ -1,0 +1,36 @@
+:root {
+  --bgGradation: linear-gradient(0deg, #ffdd02 0%, #fb8eb5 100%);
+}
+* {
+  box-sizing: border-box;
+}
+.blogArticle {
+  display: none;
+}
+.blogArticle.active {
+  display: flex;
+  margin: 5px 0;
+}
+.blogButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.blogButton li {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.blogButton .active {
+  background-color: #000;
+  color: whitesmoke;
+}
+.blogButton li.active a {
+  color: #fff;
+}
